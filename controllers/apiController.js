@@ -13,9 +13,8 @@ module.exports = function (app) {
     }));
 
 
-    /*
-     Donne tout les restaurants.
-
+    /**
+     * Donne tout les restaurants.
      */
     app.get('/restaurants', function (req, res) {
         Restaurants.find({}, function (err, restaurants) {
